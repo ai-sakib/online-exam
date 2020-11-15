@@ -10,7 +10,7 @@
         <div>
             <hr>
             @can('Admin')
-            <a href="{{ url('questions') }}" class="btn btn-primary">Create Exam Paper</a>
+            <a href="{{ url('questions') }}" class="btn btn-primary">Create Exam Paper</a> la la
             @endcan
         </div>
     </center>
