@@ -103,9 +103,11 @@
 
 			    		@endforeach
 			    	</div>
-			    	<div class="card-footer">
-			    		<button type="submit" class=" btn-block btn btn-info">Submit Answer</button>
-			    	</div>
+			    	@can('Students')
+				    	<div class="card-footer">
+				    		<button type="submit" class=" btn-block btn btn-info">Submit Answer</button>
+				    	</div>
+				    @endcan
 		    	@endif
 		    </div>
 		</form>
