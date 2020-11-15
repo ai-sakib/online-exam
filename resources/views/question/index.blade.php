@@ -12,7 +12,7 @@
 		    	</h4>
 		    	
 	    	</div>
-	    	<div class="card-body table-responsible p-2">
+	    	<div class="card-body table-responsive p-2">
     			<div class="row">
 	    			<div class="col-md-4">
 	    				<form id="form" method="get" action="{{ url('questions') }}">

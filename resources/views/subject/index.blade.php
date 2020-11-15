@@ -14,7 +14,7 @@
 		    	</h4>
 		    	
 	    	</div>
-	    	<div class="card-body table-responsible p-2">
+	    	<div class="card-body table-responsive p-2">
 	    		<table class="table table-bordered">
 	    			<thead>
 	    				<tr style="background-color: #3ea891;color: white">
