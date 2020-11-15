@@ -12,7 +12,7 @@
 		    	</h4>
 		    	
 	    	</div>
-	    	<div class="card-body table-responsive p-2">
+	    	<div class="card-body p-2">
     			<div class="row">
 	    			<div class="col-md-4">
 	    				<form id="form" method="get" action="{{ url('questions') }}">
@@ -37,6 +37,9 @@
 	    		<form id="create_exam_paper_form" method="post" action="{{ route('exam-papers.store') }}">
 	    			@csrf
 	    			<input type="hidden" name="subject_id" value="{{ $subject_id }}">
+	    			<div class="table-responsive p-0">
+	    				
+	    			
 		    		<table class="table table-bordered" id="myTable">
 		    			<thead>
 		    				<tr style="background-color:#3ea891; color:white">
@@ -68,6 +71,7 @@
 		                    @endif
 	                    </tbody>
 		    		</table>
+		    		</div>
 	    		</form>
 	    	</div>
 	    </div>

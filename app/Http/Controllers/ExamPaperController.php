@@ -27,7 +27,7 @@ class ExamPaperController extends Controller
     }
 
     public function index(Request $request){
-
+        //using for 2 actions
         $exam_papers = '';
         $subject_id = $request->subject_id;
         if($subject_id > 0){
@@ -38,17 +38,17 @@ class ExamPaperController extends Controller
     }
 
     public function show($data){
-
+        //show individual set
         $exam_paper_id = explode('&', $data)[0];
         $set_no = explode('&', $data)[1];
 
+        //auth checking
         if(Auth::user()->role->role_id == 2){
             $assigned_exam_paper = AssignStudent::where([
                 'exam_paper_id'=>$exam_paper_id,
                 'set_no'=>$set_no,
                 'student_id'=>Auth::id(),
             ])->first();
-
             if(!isset($assigned_exam_paper->id)){
                 session()->flash('error','Sorry, you are not allowed on this set or exam paper.');
                 return redirect('exam-papers');
@@ -143,7 +143,7 @@ class ExamPaperController extends Controller
                 'answer_id' => json_encode($answers_array),
             ]);
         }
-        session()->flash('sucess','Exam Paper Successfully created with 4 sets');
+        session()->flash('success','Exam Paper successfully created with 4 sets');
         return redirect('exam-papers?subject_id='.$request->subject_id);
     }
 
