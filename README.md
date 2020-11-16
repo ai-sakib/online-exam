@@ -4,6 +4,12 @@
 
 This is a simple web application for taking exam in online. In the app, there are two type of users, **Admin** and **Students**, where admins' can Create/Read/Update/Delete **Subjects/Qestions/Exam Papers** but students are not allowed for all of these except viewing only the set of an exam paper he has been assigned by an admin and viewing subjects. Admin can assign multiple students with a set for each exam paper. Students can see the set no and submit answers. Answers will be sent to the admin(who has assigned the paper) email.
 
+## Technology Used
+
+- Laravel for backend
+- jQuery for frontend
+- Bootrap 4
+
 
 ## Description
 
