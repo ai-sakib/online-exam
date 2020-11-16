@@ -15,7 +15,7 @@ This is a simple web application for taking exam in online. In the app, there ar
 ## Description
 
 ### Intialization
-Provide `/migrate` to initialize your project.
+Provide `/migrate` after the project URL to initialize this app.
 
 ### Login/Register
 
