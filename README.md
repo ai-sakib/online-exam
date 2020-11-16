@@ -39,5 +39,5 @@ Initally there will be exam papers until the subject has been chosen from the se
 
 ## Security
 
-Students can never enter to the Admin's permitted links/routes as well as Admin can't submit answer for set.
+Students can never enter to the Admin's permitted links/routes as well as Admin can't submit answer for sets.
 
