@@ -14,6 +14,9 @@ This is a simple web application for taking exam in online. In the app, there ar
 
 ## Description
 
+### Intialization
+Provide `/migrate` to initialize your project.
+
 ### Login/Register
 
 Simple registration for admin/students where these two roles has seperate permissions built in the system. 
@@ -24,7 +27,7 @@ All the subjects created by admin, will be shown to the 'subjects' route. It's j
 
 ### Questions
 
-This operation is for Admins only. It's also a simple CRUD operation but here questions is shown using REST API selecting individual subjects as there will be no questions to be shown initially. At the first column, there has a checkbox for each row. After checking seleted question click on **Create Exam Paper** button and it will create an exam paper with 4 sets where there will **shuffling questions as well as shuffling multiple choices** for each set.
+This operation is for Admins only. It's also a simple CRUD operation but here questions are shown using REST API selecting individual subjects as there will be no questions to be shown initially. At the first column, there has a checkbox for each row. After checking seleted question click on **Create Exam Paper** button and it will create an exam paper with 4 sets where there will **shuffling questions as well as shuffling multiple choices** for each set.
 
 ### Exam Papers
 
