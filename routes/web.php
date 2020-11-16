@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+//clearing cache
 Route::get('reboot', function() {
     Artisan::call('cache:clear');
     Artisan::call('route:clear');
@@ -12,6 +13,7 @@ Route::get('reboot', function() {
     return '<center><h1>System Rebooted!</h1></center>';
 });
 
+//migrate from route
 Route::get('migrate',function(){
     Artisan::call('migrate');
     return redirect('/');
@@ -27,6 +29,7 @@ Route::group(['middleware'=>'auth'],function(){
 	Route::get('/home', 'HomeController@index')->name('home');
 	Route::get('/subjects', 'SubjectController@index');
     
+    //Exam Paper - both Portion
     Route::get('/exam-papers', 'ExamPaperController@index');
     Route::get('/exam-papers/{data}', 'ExamPaperController@show');
 

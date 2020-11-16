@@ -126,7 +126,7 @@ class ExamPaperController extends Controller
         ]);
 
         for($i = 1; $i <= 4;  $i++){
-            //shuffle question id's
+            //shuffle question id's for 4 individual sets
             shuffle($questions_array);
 
             foreach ($request->selected_question as $key => $value) {
