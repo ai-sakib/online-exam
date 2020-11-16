@@ -68,6 +68,8 @@
 			    			@php 
 				    			$question = App\Models\Question::find($question_id);
 				    			if(isset($question->id)){
+				    				$set_answers = $answers_array[$questionKey];
+				    				//dd($set_answers);
 				    				$key++;
 				    			}else{
 				    				continue;
@@ -90,9 +92,9 @@
 										<label for="answer[{{ $question_id }}]">Choose Correct Answer<span style="color:red"> *</span></label>
 										<select required class="form-control" name="answer[{{ $question_id }}]">
 					    					<option value=""> --- Select --- </option>
-					    					@for($choice = 1; $choice <= 5; $choice++)
-					    						<option value="{{ $choice }}">{{ options()[$choice] }}.</option>
-					    					@endfor
+					    					@foreach($set_answers as $set_answers_key => $set_answer)
+					    						<option value="{{ $set_answer }}">{{ options()[$set_answers_key+1] }}.</option>
+					    					@endforeach
 					    				</select>
 									</div>
 						    	</div>
