@@ -39,8 +39,10 @@
                                         <strong>Set No: </strong>{{ $set_no}}<br><br>
 
                                         <strong>Answers:-</strong><br>
+                                        @php $count = 0; @endphp
                                         @foreach($answers as $key => $answer)
-                                            <span style="font-size: 15px;"><strong>Q. {{ $key }}</strong> ({{ options()[$answer] }})</span><br>
+                                          @php $count++; @endphp
+                                            <span style="font-size: 15px;"><strong>Q. {{ $count }}</strong> ({{ options()[$answer] }})</span><br>
                                         @endforeach
                                       </p>
                                     </td>
