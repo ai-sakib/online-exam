@@ -6,9 +6,10 @@ This is a simple web application for taking exam in online. In the app, there ar
 
 ## Technology Used
 
-- Laravel for backend
-- jQuery for frontend
+- Laravel (for backend)
+- jQuery (for frontend)
 - Bootstrap 4
+- REST API (for showing questions only)
 
 
 ## Description
