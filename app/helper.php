@@ -42,6 +42,6 @@ function sendExamPaperMail($view,$data)
     $mail=\Mail::send($view, $data, function ($message) use ($to_mail,$subject){
         $message->from('sakib2439@gmail.com', 'Online Exam')
         		->to($to_mail)
-          		->subject($subject);
+          	->subject($subject);
     });
 }
