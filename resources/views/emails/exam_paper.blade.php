@@ -33,7 +33,11 @@
                                         <strong>Name: </strong>{{ $from_user->name }}<br>
                                         <strong>ID: </strong>{{ $from_user->id }}<br>
                                         <strong>Email: </strong>{{ $from_user->email }}<br><br>
-                                        
+
+                                        <strong>Subject: </strong>{{ $exam_subject}},&nbsp;
+                                        <strong>Exam Paper No: </strong>{{ $exam_paper_id}},&nbsp;
+                                        <strong>Set No: </strong>{{ $set_no}}<br><br>
+
                                         <strong>Answers:-</strong><br>
                                         @foreach($answers as $key => $answer)
                                             <span style="font-size: 15px;"><strong>Q. {{ $key }}</strong> ({{ options()[$answer] }})</span><br>

@@ -94,6 +94,7 @@ class ExamPaperController extends Controller
         if (filter_var($to_user->email, FILTER_VALIDATE_EMAIL)) {
             $subject='Exam Paper Submission';
             $data['subject']=$subject;
+            $data['exam_subject']=ExamPaper::find($request->exam_paper_id)->subject->name;
             $data['exam_paper_id']=$request->exam_paper_id;
             $data['set_no'] = $request->set_no;
             $data['from_user'] = User::find($assign_student->student_id);
