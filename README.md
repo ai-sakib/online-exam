@@ -8,7 +8,7 @@ This is a simple web application for taking exam in online. In the app, there ar
 
 - Laravel for backend
 - jQuery for frontend
-- Bootrap 4
+- Bootstrap 4
 
 
 ## Description
