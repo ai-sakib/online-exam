@@ -2,7 +2,7 @@
 
 ## Abstract
 
-This is a simple web application for taking exam in online. In the app, there are two type of users, 'Admin' and 'Students', where admins' can create/read/update/delete 'Subjects/Qestions/Exam Papers' but students are not allowed for all of these except viewing only the set of an exam paper he has been assigned by an admin and viewing subjects. Admin can assign multiple students with a set for each exam paper. Students can see the set no and submit answers. Answers will be sent to the admin(who has assigned the paper) email.
+This is a simple web application for taking exam in online. In the app, there are two type of users, **Admin** and **Students**, where admins' can Create/Read/Update/Delete **Subjects/Qestions/Exam Papers** but students are not allowed for all of these except viewing only the set of an exam paper he has been assigned by an admin and viewing subjects. Admin can assign multiple students with a set for each exam paper. Students can see the set no and submit answers. Answers will be sent to the admin(who has assigned the paper) email.
 
 
 ## Description
@@ -30,7 +30,7 @@ Initally there will be exam papers until the subject has been chosen from the se
 - Student can see only the set he has been assigned. He can enter to the set and choose answers for each questions. After that he can submit answers and the submiited documnet  will be sent to the valid email of the admin who has assigned the set. After that if he/she visits the same set, he will see this score on that set.
 
 
-### Security
+## Security
 
 Students can never enter to the Admin's permitted links/routes. 
 
