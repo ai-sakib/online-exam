@@ -7,40 +7,30 @@ This is a simple web application for taking exam in online. In the app, there ar
 
 ## Description
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Login/Register
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Simple registration for admin/students where these two role has seperate permissions built in the system. 
 
-## Laravel Sponsors
+### Subjects
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+All the subjects created by admin, will be shown to the 'subjects' route. It's just a simple CRUD operation where one can direct enter to **Exam Papers/Question** (Question is not allowed for students) related to each subject.
 
-### Premium Partners
+### Questions
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+This operation is for Admins only. It's also a simple CRUD operation but here questions is shown using REST API selecting individual subjects as there will be no questions to be shown initially. At the first column, there has a checkbox for each row. After checking seleted question click on **Create Exam Paper** button and it will create an exam paper with 4 sets where there will **shuffling questions as well as shuffling multiple choices** for each sets.
 
-## Contributing
+### Exam Papers
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Initally there will be exam papers until the subject has been chosen from the select options. This portion will be shown for both admin and students
 
-## Code of Conduct
+#### Admin
+- Admin can see all the 4 sets and can enter to any set clicking the **Set No** button. And assign multiple students for the set. But one student can be assigned once with one exam paper.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### Student
+- Student can see only the set he has been assigned. He can enter to the set and choose answers for each questions. After that he can submit answers and the submiited documnet  will be sent to the valid email of the admin who has assigned the set. After that if he/she visits the same set, he will see this score on that set.
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Security
 
-## License
+Students can never enter to the Admin's permitted links/routes. 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# online-exam

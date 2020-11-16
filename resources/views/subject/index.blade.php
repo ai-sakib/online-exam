@@ -20,7 +20,7 @@
 	    				<tr style="background-color: #3ea891;color: white">
 	    					<th>SL</th>
 	    					<th>Name</th>
-	    					<th class="text-center">Exam Papers</th>
+	    					<th class="text-center">Exam Papers/Questions</th>
 	    					@can('Admin')
 	    					<th class="text-center">Action</th>
 	    					@endcan
@@ -34,6 +34,9 @@
 	                                <td>{{ $subject->name }}</td>
 	                                <td class="text-center">
 	                                    <a class="btn btn-sm btn-info" href="{{ url('exam-papers?subject_id=') }}{{ $subject->id }}">See Exam Papers</a>
+	                                    @can('Admin')
+	                                    <a class="btn btn-sm btn-info" href="{{ url('questions?subject_id=') }}{{ $subject->id }}">Questions</a>
+	                                   	@endcan
 	                                </td>
 	                                @can('Admin')
 	                                <td class="text-center">
